@@ -1,9 +1,13 @@
 const express = require('express');
 const path = require("path");
+const db = require('./DB');
 
 const app = express();
 
 const PORT = 4000;
+
+//DB접속!
+db();
 
 app.use(express.static("bundle"));
 
