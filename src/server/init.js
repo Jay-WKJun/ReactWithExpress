@@ -9,6 +9,7 @@ const PORT = 4000;
 //DB접속!
 db();
 
+//node process가 실행되는 root dir/bundle의 정적파일들을 가져와라
 app.use(express.static("bundle"));
 
 app.listen(PORT, () => {

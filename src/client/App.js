@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import TopSector from './TopSector/topSector';
+import Header from './header/header';
 
 class App extends Component {
     state = {
@@ -6,16 +8,20 @@ class App extends Component {
     }
 
     componentDidMount(){
+        /*
         fetch("api")
         .then((res)=>res.json())
         .then((JSONRES) => console.log(JSONRES));
+        */
     }
 
     render() {
         return (
-            <div>
-                <h1>Hello World!!</h1>
-                <h1>{this.state.hi}</h1>
+            <div class="contens">
+                <div class="main-page">
+                    <Header></Header>
+                    <TopSector></TopSector>
+                </div>
             </div>
         )
     }
