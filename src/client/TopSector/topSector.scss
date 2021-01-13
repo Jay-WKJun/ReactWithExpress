@@ -1,5 +1,18 @@
 .top-sector {
-    background-color: black;
+    background-color: darkgray;
     height: 51.375rem;
     position: relative;
+
+    &::after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        top: 0;
+        left: 0;
+        background-image: url("../../assets/background/la_la_land_poster-wide.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.09;
+    }
 }

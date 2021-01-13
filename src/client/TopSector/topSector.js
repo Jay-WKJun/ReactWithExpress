@@ -3,6 +3,7 @@ import React from 'react';
 import './topSector.scss';
 import OnePicture from './onePicture/onePicture';
 import NextArrow from './utilComp/bigLeftArrow';
+import RightArrow from './utilComp/bigRightArrow';
 
 const topSector = () => {
     //그림 url list를 놓고 for문으로 구현
@@ -18,7 +19,7 @@ const topSector = () => {
                     return <OnePicture image={el} key={index}/>;
                 })
             }
-            <NextArrow />
+            <RightArrow />
         </div>
     )
 }

@@ -1,9 +1,12 @@
 import React from 'react';
+import './bigRightArrow.scss';
 
 const bigRightArrow = () => {
     return (
-        <div className="arrowDiv">
-
+        <div className="rightArrowDiv">
+            <span className="rightArrowDiv__rightArrowSpan">
+                <i class="fas fa-chevron-right"></i>
+            </span>
         </div>
     )
 }
