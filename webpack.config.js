@@ -40,6 +40,14 @@ const config = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(png|jp[e]?g)$/i,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
+                ]
             }
         ]
     },

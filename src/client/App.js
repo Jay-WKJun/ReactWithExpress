@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TopSector from './TopSector/topSector';
 import Header from './header/header';
+import "./App.scss";
 
 class App extends Component {
     state = {
@@ -17,8 +18,8 @@ class App extends Component {
 
     render() {
         return (
-            <div class="contens">
-                <div class="main-page">
+            <div className="contens">
+                <div className="main-page">
                     <Header></Header>
                     <TopSector></TopSector>
                 </div>
